@@ -9,16 +9,15 @@ let scissors = document.getElementById("scissors");
 
 const gameText = document.getElementById("gametext");
 
-const computerChoice = ["rock", "paper", "scissors"];
 
+let computerSelection;
 let playerSelection;
 
-let randomNum = Math.floor(Math.random() * 3);
+//let randomNum = Math.floor(Math.random() * 3);
 
 
 function computerPlay () {
-    const randomNum = Math.floor(Math.random() * 3);
-    let computerSelection;
+    let randomNum = Math.floor(Math.random()*3);
         if (randomNum === 0) {
             computerSelection = "rock";
         } else if (randomNum === 1) {
@@ -54,19 +53,21 @@ scissors.addEventListener("click", function() {
     scissorClick();
 });
 
+
+
 /*Function for Computer Player*/
 
 
 
-
+let computerChoice = computerPlay();
 
 function rockClick() {
     playerSelection === "rock";
     computerPlay();
-        if (computerPlay == playerSelection) {
-            gameText.textcontent = "It/s a tie!";
+        if (computerSelection == "rock") {
+            gameText.textContent = "Its a tie!"
         }
-        else if (computerPlay = "scissors") {
+        else if (computerSelection == "scissors") {
             gameText.textContent = "You win! Rock beats scissors!"
             playerScore++;
         }
@@ -75,8 +76,8 @@ function rockClick() {
             computerScore++;
         };
         scoreBoard(playerScore, computerScore);
-        return;
-    }
+        
+    };
 
 
   /*
