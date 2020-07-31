@@ -13,23 +13,25 @@ const computerChoice = ["rock", "paper", "scissors"];
 
 let playerSelection;
 
-let randomNum = Math.floor(Math.random()*3);
+let randomNum = Math.floor(Math.random() * 3);
 
 
 function computerPlay () {
-    let number = randomNum;
-        switch(number) {
-            case 0:
-                return "rock"
-                break;
-            case 1: 
-                return "paper"
-                break;
-            case 2:
-                return "scissors"
-                break;
+    const randomNum = Math.floor(Math.random() * 3);
+    let computerSelection;
+        if (randomNum === 0) {
+            computerSelection = "rock";
+        } else if (randomNum === 1) {
+            computerSelection = "paper";
+        } else {
+            computerSelection = "scissors";
         }
-};
+        return computerSelection;
+    };
+    
+       
+    
+
 
 
 //Scoreboard function
