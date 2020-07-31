@@ -1,0 +1,54 @@
+html {
+    background-color: rgb(36, 66, 148);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(73, 148, 209);
+    padding: 1em 1em 1em 1em;
+    margin-top: 0em;
+    margin-bottom: 4em;
+    text-align: center;
+    color: rgb(238, 235, 235);
+}
+
+#textsquare {
+    background-color: rgb(73, 148, 209);
+   text-align: center;
+   padding: 1em 10px 1em 10px;
+   margin: 1em 14em 1em 14em;
+   color: rgb(236, 230, 230);
+   border-radius: 20px;
+   
+}
+
+.score {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.container {
+    text-align: center;
+    margin: 3em 3em 3em 3em;
+}
+
+.button {
+    padding: 20px 20px 20px 20px;
+    margin: 3em;
+    background-color:rgb(73, 148, 209);
+    border: none;
+    border-radius: 20px;
+    color: rgb(238, 235, 235);
+    cursor: pointer;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+button:active {
+    background-color: rgb(175, 90, 11);
+}
+
+
